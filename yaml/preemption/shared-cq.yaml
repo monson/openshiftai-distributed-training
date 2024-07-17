@@ -19,6 +19,6 @@ spec:
     - name: "default-flavor"
       resources:
       - name: "cpu"
-        nominalQuota: 10
+        nominalQuota: 12
       - name: "memory"
         nominalQuota: 64Gi

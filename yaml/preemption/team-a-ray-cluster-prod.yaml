@@ -9,7 +9,7 @@ metadata:
   name: raycluster-prod
   namespace: team-a
 spec:
-  rayVersion: 2.7.0
+  rayVersion: 2.23.0
   headGroupSpec:
     enableIngress: false
     rayStartParams:
@@ -48,7 +48,7 @@ spec:
     numOfHosts: 1
     rayStartParams:
       block: "true"
-      num-gpus: "0"
+      num-gpus: "1"
     replicas: 2
     scaleStrategy: {}
     template:
@@ -61,8 +61,8 @@ spec:
             limits:
               cpu: "4"
               memory: 8G
-              nvidia.com/gpu: "0"
+              nvidia.com/gpu: "1"
             requests:
               cpu: "4"
               memory: 8G
-              nvidia.com/gpu: "0"
+              nvidia.com/gpu: "1"
