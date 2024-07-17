@@ -2,7 +2,7 @@ from datasets import load_dataset
 import json
 import os
 
-dataset = load_dataset("gsm8k", "main", cache_dir="../../datasets")
+dataset = load_dataset("gsm8k", "main")
 
 dataset_splits = {"train": dataset["train"], "test": dataset["test"]}
 
